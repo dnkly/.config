@@ -1,0 +1,116 @@
+/* Colors */
+@define-color black   #1d2021;
+@define-color white   #ffffff;
+@define-color red     #fb4934;
+@define-color green   #689d6a;
+@define-color blue    #458588;
+@define-color purple  #b16286;
+@define-color gray    #504945;
+
+
+/* General */
+* {
+    font-family: CaskaydiaCoveNerdFont;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+
+window#waybar {
+    background-color: @black;
+    color: @white;
+}
+
+#clock,
+#mode,
+#cpu,
+#memory,
+#temperature,
+#pulseaudio,
+#backlight,
+#network,
+#battery {
+    padding: 0 10px;
+}
+
+#custom-left-arrow1,
+#custom-left-arrow2,
+#custom-right-arrow1,
+#custom-right-arrow2,
+#custom-right-arrow3 {
+    font-size: 20px;
+}
+
+#battery.warning {
+    background: @red;
+}
+
+
+/* Left modules */
+#workspaces {
+    background-color: @green;
+}
+
+#workspaces button {
+    color: @gray;
+    padding: 0 8px;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    color: @white;
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+#workspaces button.focused {
+    color: @white;
+}
+
+#clock {
+    background-color: @purple;
+}
+
+#custom-left-arrow1 {
+    background-color: @green;
+    color: @purple;
+}
+
+#custom-left-arrow2 {
+    color: @green;
+}
+
+
+/* Right modules */
+#cpu,
+#memory,
+#temperature {
+    background-color: @green;
+}
+
+#pulseaudio,
+#backlight {
+    background-color: @blue;
+}
+
+#network,
+#battery {
+    background-color: @purple;
+}
+
+#custom-right-arrow1 {
+    color: @green;
+}
+
+#custom-right-arrow2 {
+    background-color: @green;
+    color: @blue;
+}
+
+#custom-right-arrow3 {
+    background-color: @blue;
+    color: @purple;
+}

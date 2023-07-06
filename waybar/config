@@ -1,0 +1,91 @@
+{
+    "position": "bottom",
+    "modules-left": [
+        "clock",
+        "custom/left-arrow1",
+        "sway/workspaces",
+        "custom/left-arrow2",
+        "sway/mode"
+    ],
+    "modules-center": [],
+    "modules-right": [
+        "custom/right-arrow1",
+        "cpu",
+        "memory",
+        "temperature",
+        "custom/right-arrow2",
+        "pulseaudio",
+        "backlight",
+        "custom/right-arrow3",
+        "network",
+        "battery"
+    ],
+    "sway/workspaces": {
+        "disable-scroll": true,
+    },
+    "sway/mode": {
+        "format": "{}",
+        "tooltip": false
+    },
+    "clock": {
+        "format": "{:%A %d %b %H:%M}",
+        "tooltip": false
+    },
+    "cpu": {
+        "format": "CPU: {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "RAM: {percentage}%",
+        "tooltip": false
+    },
+    "temperature": {
+        "format": " {temperatureC}°C",
+        "critical-threshold": 80,
+        "tooltip": false
+    },
+    "pulseaudio": {
+        "format": "󰕾 {volume}%",
+        "format-muted": "Muted",
+        "tooltip": false
+    },
+    "backlight": {
+        "format": " {percent}%",
+        "tooltip": false
+    },
+    "network": {
+        "format-wifi": "  {essid}",
+        "format-ethernet": "󰈀 {ipaddr}/{cidr}",
+        "format-disconnected": "  Disconnected",
+        "tooltip": false
+    },
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "tooltip": false,
+        "states": {
+            "warning": 20
+        }
+    },
+    "custom/left-arrow1": {
+        "format": "",
+        "tooltip": false
+    },
+    "custom/left-arrow2": {
+        "format": "",
+        "tooltip": false
+    },
+    "custom/right-arrow1": {
+        "format": "",
+        "tooltip": false
+    },
+    "custom/right-arrow2": {
+        "format": "",
+        "tooltip": false
+    },
+    "custom/right-arrow3": {
+        "format": "",
+        "tooltip": false
+    }
+}

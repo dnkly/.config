@@ -1,0 +1,16 @@
+theme = "gruvbox"
+
+[editor]
+idle-timeout = 0
+completion-trigger-len = 1
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.whitespace.render]
+space = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+newline = "⏎"

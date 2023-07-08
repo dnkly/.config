@@ -9,8 +9,18 @@ insert = "bar"
 
 [editor.whitespace.render]
 space = "all"
+tab = "all"
 newline = "none"
 
 [editor.whitespace.characters]
 space = "·"
+tab = "→"
 newline = "⏎"
+
+[keys.normal]
+i = ["insert_mode", "collapse_selection"]
+a = ["append_mode", "collapse_selection"]
+esc = ["collapse_selection"]
+
+[keys.select]
+esc = ["collapse_selection", "normal_mode"]

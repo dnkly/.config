@@ -1,0 +1,20 @@
+[[language]]
+name = "cpp"
+scope = "source.cpp"
+injection-regex = "cpp"
+file-types = ["cpp", "hpp"]
+roots = ["CMakeLists.txt"]
+comment-token = "//"
+language-servers = ["clangd"]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "python"
+scope = "source.python"
+injection-regex = "python"
+file-types = ["py"]
+shebangs = ["python"]
+roots = []
+comment-token = "#"
+language-servers = ["pylsp"]
+indent = { tab-width = 4, unit = "    " }

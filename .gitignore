@@ -15,6 +15,7 @@ fish/*
 helix/*
 !helix/
 !helix/config.toml
+!helix/languages.toml
 
 !.gitignore
 !README.md

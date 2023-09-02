@@ -6,6 +6,7 @@
 !sway/
 !swaylock/
 !waybar/
+!zellij/
 !starship.toml
 
 fish/*
